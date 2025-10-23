@@ -24,7 +24,7 @@ function decryption(input) {
 
 // handeling user requests
 
-ServerType.get("/",(req,res)=>{
+server.get("/",(req,res)=>{
   res.send("Server is live")
 })
 
