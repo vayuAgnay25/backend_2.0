@@ -24,7 +24,10 @@ function decryption(input) {
 
 // handeling user requests
 
-count = 1;
+ServerType.get("/",(req,res)=>{
+  res.send("Server is live")
+})
+
 server.post("/keyPass", async (req, res) => {
   try {
     const { username, password } = req.body;
